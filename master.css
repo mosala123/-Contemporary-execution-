@@ -6,7 +6,7 @@
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
-  margin: 100px auto 0  auto;
+  margin: 100px 0;
   padding: 0;
   position: relative; /* تأكد من وضع هذا السطر */
   z-index: 1;
