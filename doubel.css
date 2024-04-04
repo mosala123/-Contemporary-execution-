@@ -26,9 +26,7 @@
   font-size: 20px;
   font-weight: 600;
 }
-.collapse {
-    padding: 0 20px;
-}
+ 
 
 .collapse a, .active {
     transition: 1s ease linear;
