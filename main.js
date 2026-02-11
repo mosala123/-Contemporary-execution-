@@ -1,71 +1,64 @@
-// swiper home 
-var swiper = new Swiper(".mySwiper", {
-  pagination: {
-    el: ".swiper-pagination",
-    type: "progressbar",
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-
-// -------------------- 
- 
-// --------------------------------------------------------
-  // swiper two 
-  var swiper = new Swiper('.foursections .swiper-container', {
-    slidesPerView: 1,
+// تهيئة السلايدر الرئيسي
+const heroSwiper = new Swiper('.hero-swiper', {
     loop: true,
     autoplay: {
-      delay: 3000, // milliseconds
-      disableOnInteraction: false,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+        delay: 5000,
+        disableOnInteraction: false,
     },
     pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
+        el: '.swiper-pagination',
+        type: 'progressbar',
     },
-  });
-  
-
-  // 
-// -------------------------
- 
-// show the images 
-
- 
-var swiper = new Swiper('.eight .swiper-container', {
-  loop: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 });
 
+// تهيئة سلايدر الشركاء
+const partnersSwiper = new Swiper('.swiper-partners', {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        576: { slidesPerView: 3 },
+        768: { slidesPerView: 4 },
+        992: { slidesPerView: 5 },
+    }
+});
 
-
-
-
-// المشاريع 
-
-function showOverlay(element) {
-  var overlay = element.querySelector('.overlay');
-  overlay.style.display = 'flex';
-}
-
-function hideOverlay(element) {
-  var overlay = element.querySelector('.overlay');
-  overlay.style.display = 'none';
-}
-
-
-// -----------------------------------
- 
+// تهيئة سلايدر العملاء (نفس الإعدادات)
+const clientsSwiper = new Swiper('.swiper-clients', {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        576: { slidesPerView: 3 },
+        768: { slidesPerView: 4 },
+        992: { slidesPerView: 5 },
+    }
+});

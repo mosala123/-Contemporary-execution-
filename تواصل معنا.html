@@ -1,248 +1,238 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>   تواصل معنا  </title>
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="doubel.css">
-    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>تواصل معنا | التنفيذ المعاصر</title>
+    <!-- Bootstrap 5.3 RTL -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+    <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- Google Font - Tajawal -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <!-- الأنماط الموحدة -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-header {
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+            margin-bottom: 60px;
+        }
+        .page-header img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .page-header .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(10,61,98,0.7);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .page-header h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 15px;
+        }
+        .page-header p {
+            font-size: 1.5rem;
+            opacity: 0.9;
+        }
+        .contact-info-box {
+            background: white;
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-sm);
+            height: 100%;
+            transition: var(--transition);
+            border-bottom: 4px solid transparent;
+        }
+        .contact-info-box:hover {
+            box-shadow: var(--shadow-hover);
+            border-bottom-color: var(--secondary);
+        }
+        .contact-info-box i {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+        .contact-info-box h4 {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 <body>
-<!-- start  navbar  -->
- 
-<nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding: 5px 20px; direction: rtl;position: fixed;width: 100%;z-index: 9999;top: 0;">
+
+<!-- ===== النافبار ===== -->
+<nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
-      <!-- زر الهامبورغر للأجهزة المحمولة -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- عنوان الشريط -->
-      <a class="navbar-brand" href="#"><img src="images/image1.jpg" alt="" style="width: 80px; height: 80px;"></a>
-      <!-- قائمة التنقل -->
-      <div class="collapse navbar-collapse" id="navbarNav" style="text-align: right;">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">الصفحة الرئيسية</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="من نحن .html">من نحن</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="الخدمات .html">الخدمات</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="المشاريع.html">المشاريع</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="عملاءنا.html">عملاءنا</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="الوساءط.html">الوسائط</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="الوظاءف .html">الوظائف</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="تواصل معنا.html">تواصل معنا</a>
-          </li>
-        </ul>
-      </div>
+        <a class="navbar-brand" href="index.html">
+            <img src="images/image1.jpg" alt="شعار التنفيذ المعاصر">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+                <li class="nav-item"><a class="nav-link" href="من نحن .html">من نحن</a></li>
+                <li class="nav-item"><a class="nav-link" href="الخدمات .html">الخدمات</a></li>
+                <li class="nav-item"><a class="nav-link" href="المشاريع.html">المشاريع</a></li>
+                <li class="nav-item"><a class="nav-link" href="عملاءنا.html">عملاؤنا</a></li>
+                <li class="nav-item"><a class="nav-link" href="الوساءط.html">الوسائط</a></li>
+                <li class="nav-item"><a class="nav-link" href="الوظاءف .html">الوظائف</a></li>
+                <li class="nav-item"><a class="nav-link active" href="تواصل معنا.html">تواصل معنا</a></li>
+            </ul>
+        </div>
     </div>
 </nav>
-  
-<!-- end navbar  -->
 
- 
-
-
-
- 
-
-
-
-
-<!-- strat home for    تواصل معنا     -->
-<div class="container-fluid p-0 m-0" style="position: relative; text-align: right;">
-  <img src="images/video-cover.jpg" class="img-fluid" style="width: 100vw; height: 600px; object-fit: cover; border-radius: 0;">
-  <div class="position-absolute" style="color: white; right: 10%; top: 50%;  ">
-    <h1 style="font-size: 45px; font-weight: bold;"> تواصل معنا   </h1>
-    <p style="font-size: 30px;">الصفحة الرئيسية /    تواصل معنا </p>
-  </div>
+<!-- ===== رأس الصفحة ===== -->
+<div class="page-header">
+    <img src="images/video-cover.jpg" alt="تواصل معنا">
+    <div class="overlay">
+        <h1>تواصل معنا</h1>
+        <p>الرئيسية / تواصل معنا</p>
+    </div>
 </div>
 
-
-<!-- end home for  تواصل معنا      -->
-
-
-
-
-
-
-<!-- content  -->
-<div id="content" style="text-align: right; padding: 30px 10px ; background-color: #33333343;"> 
-<div class="container" style="font-size: 30px ; font-weight: 500;"   >
- 
-  <form>
-      <div class="mb-3">
-          <label for="fullname" class="form-label">الاسم الكامل</label>
-          <input type="text" class="form-control " id="fullname" required>
-      </div>
-      <div class="row">
-          <div class="col-md-6 mb-3">
-              <label for="email" class="form-label">البريد الإلكتروني</label>
-              <input type="email" class="form-control" id="email" required>
-          </div>
-          <div class="col-md-6 mb-3">
-              <label for="address" class="form-label">العنوان</label>
-              <input type="text" class="form-control" id="address" required>
-          </div>
-      </div>
-      <div class="mb-3">
-          <label for="message" class="form-label">الرسالة</label>
-          <textarea class="form-control" id="message" rows="3" required></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary" style="margin: 6px 10px ;font-size: 30px ;"  >  <i class="fa-brands fa-telegram " style="cursor: pointer;" ></i>   إرسال الرسالة</button>
-  </form>
-</div>
-
-
-</div>
-<!-- /--------------------- -->
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- start ten sections  -->
- 
-
-<footer class="text-center text-lg-start bg-body-tertiary text-muted">
-  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-    <div  style="font-size: 22px;font-weight: 500;color: #000;">
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-google"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-github"></i>
-      </a>
+<!-- ===== معلومات الاتصال ===== -->
+<section style="padding: 60px 0;">
+    <div class="container-custom">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="contact-info-box text-center">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h4>العنوان</h4>
+                    <p style="font-size: 1.1rem;">الرياض، حطابة، طريق الثمامة<br>المملكة العربية السعودية</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="contact-info-box text-center">
+                    <i class="fa-solid fa-phone"></i>
+                    <h4>رقم الهاتف</h4>
+                    <p style="font-size: 1.1rem;">+966 50 650 3938<br>+966 11 234 5678</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="contact-info-box text-center">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h4>البريد الإلكتروني</h4>
+                    <p style="font-size: 1.1rem;">info@contemporary.sa<br>support@contemporary.sa</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="me-5 d-none d-lg-block">
-      <span  style="font-size: 24px;font-weight: 700;color: #000;">تواصل معنا على وسائل التواصل الاجتماعي:</span>
+</section>
+
+<!-- ===== نموذج الاتصال + الخريطة ===== -->
+<section style="background: var(--gray-100); padding: 80px 0;">
+    <div class="container-custom">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-container" style="height: 100%;">
+                    <h2 class="text-center" style="color: var(--primary); margin-bottom: 40px;">أرسل لنا رسالة</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">الاسم الكامل</label>
+                            <input type="text" class="form-control" placeholder="الاسم الكامل" required>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">البريد الإلكتروني</label>
+                                <input type="email" class="form-control" placeholder="example@domain.com" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">رقم الجوال</label>
+                                <input type="tel" class="form-control" placeholder="05xxxxxxxx" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">الرسالة</label>
+                            <textarea class="form-control" rows="5" placeholder="اكتب رسالتك هنا..."></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-submit btn-lg">
+                                <i class="fa-brands fa-telegram ms-2"></i> إرسال الرسالة
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div style="background: white; border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--shadow-md); height: 100%; min-height: 450px;">
+                    <!-- خريطة جوجل (مكان وهمي) -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115926.07078545663!2d46.6476019972656!3d24.7747753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2ee3c2f0c3b9e1%3A0x4b5c7e9e6c3a8e0!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sen!2seg!4v1712522400000!5m2!1sen!2seg" 
+                            width="100%" height="100%" style="border:0; min-height: 450px;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
     </div>
-  </section>
+</section>
 
-  <section  style="font-size: 17px;font-weight: 100;color: #000; text-decoration: none;" >
-    <div class="container text-center text-md-start mt-5">
-      <div class="row mt-3">
- 
-
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" >
-          <h6 class="text-uppercase fw-bold mb-4">
-            الخدمات
-          </h6>
-          <p>
-            <a href="#!" class="text-reset"   style="text-decoration: none;">        تصميم وانشاء بيئة عمل مناسبة            </a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset"  style="text-decoration: none;"> اعمال المقاولات العامة المتعلقه بانشاء المباني            </a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset"  style="text-decoration: none;">تشطيبات داخليه وخارجيه            </a>
-          </p>
-          <p>
-   <a href="#!" class="text-reset"  style="text-decoration: none;"> اعمال البينة التحتيه</a>
-          </p>
+<!-- ===== التذييل (Footer) ===== -->
+<footer class="footer">
+    <div class="container-custom">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-5">
+                <h5 class="footer-title">التنفيذ المعاصر</h5>
+                <p>مؤسسة ناشئة في مجال البناء والمقاولات والتشطيب والبنية التحتية في المملكة العربية السعودية، تأسست عام 1444 هجري.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-5">
+                <h5 class="footer-title">الخدمات</h5>
+                <ul class="list-unstyled">
+                    <li><a href="الخدمات .html">تصميم بيئة عمل</a></li>
+                    <li><a href="الخدمات .html">مقاولات عامة</a></li>
+                    <li><a href="الخدمات .html">تشطيبات داخلية</a></li>
+                    <li><a href="الخدمات .html">تشطيبات خارجية</a></li>
+                    <li><a href="الخدمات .html">البنية التحتية</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-5">
+                <h5 class="footer-title">روابط مفيدة</h5>
+                <ul class="list-unstyled">
+                    <li><a href="من نحن .html">من نحن</a></li>
+                    <li><a href="المشاريع.html">المشاريع</a></li>
+                    <li><a href="الوظاءف .html">الوظائف</a></li>
+                    <li><a href="تواصل معنا.html">اتصل بنا</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-5">
+                <h5 class="footer-title">تواصل معنا</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-map-marker-alt ms-2"></i> الرياض، المملكة العربية السعودية</li>
+                    <li><i class="fas fa-phone ms-2"></i> +966 50 650 3938</li>
+                    <li><i class="fas fa-envelope ms-2"></i> info@contemporary.sa</li>
+                </ul>
+            </div>
         </div>
-
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" >
-          <h6 class="text-uppercase fw-bold mb-4">
-            روابط مفيدة
-          </h6>
-          <p>
-            <a href="#!" class="text-reset"  style="text-decoration: none;" >الأسعار</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset"  style="text-decoration: none;">الإعدادات</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset"  style="text-decoration: none;">الطلبات</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset"  style="text-decoration: none;">المساعدة</a>
-          </p>
+        <div class="copyright">
+            <p>© 2024 التنفيذ المعاصر. جميع الحقوق محفوظة.</p>
         </div>
-
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <h6 class="text-uppercase fw-bold mb-4">تواصل</h6>
-          <p><i class="fas fa-home me-3"></i> نيويورك، نيويورك 10012، الولايات المتحدة</p>
-          <p>
-            <i class="fas fa-envelope me-3"></i>
-            info@example.com
-          </p>
-          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
-        </div>
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3"></i>اسم الشركة
-          </h6>
-          <p>
-            مؤسسة ناشئة بمجال البناء والمقاولات و التشطيب و البنية التحتية في المملكة العربية السعودية تأسست عام 1444 هجري
-
-            الرياض
-          </p>
-        </div>
-      </div>
     </div>
-  </section>
-
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2021 الحقوق محفوظة:
-    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-  </div>
 </footer>
 
-
-<!-- end ten sections  -->
-
-
-
-
-
-
-
- 
-  <!---------------  -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <script src="main.js"></script>
-  <script src="bootstrap-4.0.0-dist/js/popper.min.js"></script>
-  <script src="bootstrap-4.0.0-dist/js/bootstrap.js"></script>
-  <script src="bootstrap-4.0.0-dist/js/jquery-3.7.1.min.js"></script>
+<!-- ===== السكريبتات ===== -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="main.js"></script>
 </body>
 </html>

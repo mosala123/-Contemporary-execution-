@@ -1,266 +1,245 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>   الخدمات  </title>
-    <link rel="stylesheet" href="master.css">
-    <link rel="stylesheet" href="doubel.css">
-    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>الخدمات | التنفيذ المعاصر</title>
+    <!-- Bootstrap 5.3 RTL -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+    <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- Google Font - Tajawal -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <!-- الأنماط الموحدة -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-header {
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+            margin-bottom: 60px;
+        }
+        .page-header img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .page-header .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(10,61,98,0.7);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .page-header h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 15px;
+        }
+        .page-header p {
+            font-size: 1.5rem;
+            opacity: 0.9;
+        }
+    </style>
 </head>
 <body>
-<!-- start  navbar  -->
- 
-<nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding: 5px 20px; direction: rtl;position: fixed;width: 100%;z-index: 9999;top: 0;">
+
+<!-- ===== النافبار ===== -->
+<nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
-      <!-- زر الهامبورغر للأجهزة المحمولة -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- عنوان الشريط -->
-      <a class="navbar-brand" href="#"><img src="images/image1.jpg" alt="" style="width: 80px; height: 80px;"></a>
-      <!-- قائمة التنقل -->
-      <div class="collapse navbar-collapse " id="navbarNav" style="text-align: right;">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">الصفحة الرئيسية</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="من نحن .html">من نحن</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="الخدمات .html">الخدمات</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="المشاريع.html">المشاريع</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="عملاءنا.html">عملاءنا</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="الوساءط.html">الوسائط</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="الوظاءف .html">الوظائف</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="تواصل معنا.html">تواصل معنا</a>
-          </li>
-        </ul>
-      </div>
+        <a class="navbar-brand" href="index.html">
+            <img src="images/image1.jpg" alt="شعار التنفيذ المعاصر">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+                <li class="nav-item"><a class="nav-link" href="من نحن .html">من نحن</a></li>
+                <li class="nav-item"><a class="nav-link active" href="الخدمات .html">الخدمات</a></li>
+                <li class="nav-item"><a class="nav-link" href="المشاريع.html">المشاريع</a></li>
+                <li class="nav-item"><a class="nav-link" href="عملاءنا.html">عملاؤنا</a></li>
+                <li class="nav-item"><a class="nav-link" href="الوساءط.html">الوسائط</a></li>
+                <li class="nav-item"><a class="nav-link" href="الوظاءف .html">الوظائف</a></li>
+                <li class="nav-item"><a class="nav-link" href="تواصل معنا.html">تواصل معنا</a></li>
+            </ul>
+        </div>
     </div>
 </nav>
-  
-<!-- end navbar  -->
 
-
-
-
-<!-- strat home for    الخدمات  -->
-<div class="container-fluid p-0 m-0" style="position: relative; text-align: right;">
-    <img src="images/video-cover.jpg" class="img-fluid" style="width: 100vw; height: 600px; object-fit: cover;">
-    <div class="position-absolute" style="color: white; right: 10%; top: 50%;  ">
-      <h1 style="font-size: 45px; font-weight: bold;"> الخدمات  </h1>
-      <p style="font-size: 30px;">الصفحة الرئيسية /    الخدمات</p>
+<!-- ===== رأس الصفحة ===== -->
+<div class="page-header">
+    <img src="images/video-cover.jpg" alt="الخدمات">
+    <div class="overlay">
+        <h1>الخدمات</h1>
+        <p>الرئيسية / الخدمات</p>
     </div>
-  </div>
-  
-  
-<!-- end home for  الخدمات     -->
+</div>
 
+<!-- ===== مقدمة الخدمات ===== -->
+<section style="padding: 60px 0;">
+    <div class="container-custom text-center">
+        <h2 class="section-title" style="margin-bottom: 20px;">ما نفعله</h2>
+        <h3 style="font-size: 2.5rem; color: var(--primary); margin-bottom: 30px;">خدماتنا المتكاملة</h3>
+        <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto; color: var(--gray-600);">
+            نقدم مجموعة شاملة من خدمات المقاولات والتشطيب والبنية التحتية، تحت إشراف فريق هندسي متخصص، ووفق أعلى معايير الجودة والسلامة.
+        </p>
+    </div>
+</section>
 
-
-
-<!--  strat  two sections  الخدمات-->
-
-<div class="twosections Service" style="padding: 10px;">
-    <div class="container mt-5">
-      <h3 class="text-center">ما نفعله</h3>
-      <h1 class="text-center">خدمتنا</h1>
-      <div class="row mt-5">
-        <div class="col-md-6">
-          <div class="card " style="background-color: #33333313;"    >
-            <img src="images/istockphoto-174902845-612x612.jpg" class="card-img-top" alt="صورة">
-            <div class="card-body">
-              <p class="card-text" id="pargraph">تصميم وانشاء بيئة عمل مناسبة</p>
-              <p class="card-text text-center">تحسين مكان العمل وتوفير مرافق صديقة للعمال</p>
+<!-- ===== قائمة الخدمات (شبكة البطاقات) ===== -->
+<section style="padding: 40px 0 80px;">
+    <div class="container-custom">
+        <div class="services-grid">
+            <!-- خدمة 1 -->
+            <div class="service-card">
+                <img src="images/istockphoto-174902845-612x612.jpg" alt="تصميم بيئة عمل">
+                <div class="service-info">
+                    <h3>تصميم وإنشاء بيئة عمل مناسبة</h3>
+                    <p>تحسين مكان العمل وتوفير مرافق صديقة للعمال، تصميم مساحات إبداعية تزيد الإنتاجية.</p>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card" style="background-color: #33333313;" >
-            <img src="images/istockphoto-2097564952-612x612.jpg" class="card-img-top" alt="صورة">
-            <div class="card-body">
-              <p class="card-text text-center" id="pargraph">اعمال المقاولات العامة المتعلقه بانشاء المباني</p>
-              <p class="card-text text-center">أعمال التشطيبات الداخلية والخارجية هي إحدى أنواع المهام الفنية والهندسية التي تختص بها خدمات مقاولات عامة، فالتشطيب هو عبارة عن مجموعة من الخطوات الفنية المحددة التي تهدف إلى تزويد المبنى أو العقار بكافة المستلزمات الخدمية المتنوعة</p>
+            <!-- خدمة 2 -->
+            <div class="service-card">
+                <img src="images/istockphoto-2097564952-612x612.jpg" alt="مقاولات عامة">
+                <div class="service-info">
+                    <h3>أعمال المقاولات العامة</h3>
+                    <p>إنشاء المباني وفق أعلى معايير الجودة والسلامة، من الحفر وحتى التشطيب والتسليم على المفتاح.</p>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="row mt-5">
-        <div class="col-md-6">
-          <div class="card" style="background-color: #33333313;" >
-            <img src="images/istockphoto-827008078-612x612.jpg" class="card-img-top" alt="صورة">
-            <div class="card-body">
-              <p class="card-text text-center" id="pargraph">تشطيبات داخليه وخارجيه</p>
-              <p class="card-text text-center">لدىنا بنية قدرات ومؤهلات واسعة لتصميم وتنفيذ وتسليم أعمال البنية التحتية متعددة التخصصات التي تتوافق مع المعايير والمواصفات المحلية والدولية</p>
+            <!-- خدمة 3 -->
+            <div class="service-card">
+                <img src="images/istockphoto-827008078-612x612.jpg" alt="تشطيبات داخلية">
+                <div class="service-info">
+                    <h3>تشطيبات داخلية وخارجية</h3>
+                    <p>لمسات فنية عالية الجودة تضفي الفخامة على مشروعك، تنفيذ دقيق وفق أحدث التصاميم.</p>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card" style="background-color: #33333313;" >
-            <img src="images/istockphoto-145065077-612x612.jpg" class="card-img-top" alt="صورة">
-            <div class="card-body">
-              <p class="card-text text-center" id="pargraph">تشطيبات داخليه وخارجيه</p>
-              <p class="card-text">شركة التنفيذ المعاصر متعددة التخصصات وتقدم كافة خدمات المقاولات العامة والمتخصصه، بدءاً من المساحة والحفر وحتي التشطيب الداخلي والخارجي والتسليم علي المفتاح</p>
+            <!-- خدمة 4 -->
+            <div class="service-card">
+                <img src="images/istockphoto-145065077-612x612.jpg" alt="البنية التحتية">
+                <div class="service-info">
+                    <h3>أعمال البنية التحتية</h3>
+                    <p>تنفيذ متكامل للطرق، شبكات المياه، الصرف الصحي، والأعمال الترابية بمواصفات عالمية.</p>
+                </div>
             </div>
-          </div>
+            <!-- خدمة 5 (إضافية) -->
+            <div class="service-card">
+                <img src="images/istockphoto-1227537563-612x612.jpg" alt="صيانة">
+                <div class="service-info">
+                    <h3>الصيانة وإعادة التأهيل</h3>
+                    <p>خدمات صيانة دورية وطارئة للمنشآت، وإعادة تأهيل المباني القديمة بأحدث التقنيات.</p>
+                </div>
+            </div>
+            <!-- خدمة 6 (إضافية) -->
+            <div class="service-card">
+                <img src="images/istockphoto-1131205409-612x612.jpg" alt="استشارات هندسية">
+                <div class="service-info">
+                    <h3>استشارات هندسية</h3>
+                    <p>دراسات جدوى، إشراف هندسي، وإدارة مشاريع متكاملة من قبل خبراء معتمدين.</p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-    
-     
-    <!--  end  two sections  الخدمات-->
-     
-    
+</section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- start ten sections  -->
- 
-
-<footer class="text-center text-lg-start bg-body-tertiary text-muted">
-  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-    <div  style="font-size: 22px;font-weight: 500;color: #000;">
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-google"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-github"></i>
-      </a>
+<!-- ===== لماذا خدماتنا؟ ===== -->
+<section style="background: var(--gray-100); padding: 80px 0;">
+    <div class="container-custom">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="why-us-text">
+                    <h2 style="font-size: 2.2rem; color: var(--primary); margin-bottom: 30px;">لماذا تختار خدماتنا؟</h2>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 25px; display: flex; gap: 15px;">
+                            <i class="fa-solid fa-check-circle" style="color: var(--secondary); font-size: 1.8rem;"></i>
+                            <div><strong style="font-size: 1.3rem;">فريق هندسي متخصص</strong><br>نخبة من المهندسين والفنيين ذوي الخبرة العالية.</div>
+                        </li>
+                        <li style="margin-bottom: 25px; display: flex; gap: 15px;">
+                            <i class="fa-solid fa-check-circle" style="color: var(--secondary); font-size: 1.8rem;"></i>
+                            <div><strong style="font-size: 1.3rem;">معايير جودة عالمية</strong><br>نلتزم بأعلى المواصفات الفنية والمعايير الدولية.</div>
+                        </li>
+                        <li style="margin-bottom: 25px; display: flex; gap: 15px;">
+                            <i class="fa-solid fa-check-circle" style="color: var(--secondary); font-size: 1.8rem;"></i>
+                            <div><strong style="font-size: 1.3rem;">التسليم في الوقت المحدد</strong><br>نحرص على إنجاز المشاريع وفق الجدول الزمني بدقة.</div>
+                        </li>
+                        <li style="margin-bottom: 25px; display: flex; gap: 15px;">
+                            <i class="fa-solid fa-check-circle" style="color: var(--secondary); font-size: 1.8rem;"></i>
+                            <div><strong style="font-size: 1.3rem;">أسعار تنافسية</strong><br>نقدم أفضل قيمة مقابل المال دون المساس بالجودة.</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-image">
+                    <img src="images/istockphoto-2097564952-612x612.jpg" alt="فريق العمل" class="img-fluid">
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="me-5 d-none d-lg-block">
-      <span  style="font-size: 24px;font-weight: 700;color: #000;">تواصل معنا على وسائل التواصل الاجتماعي:</span>
+</section>
+
+<!-- ===== التذييل (Footer) ===== -->
+<footer class="footer">
+    <div class="container-custom">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-5">
+                <h5 class="footer-title">التنفيذ المعاصر</h5>
+                <p>مؤسسة ناشئة في مجال البناء والمقاولات والتشطيب والبنية التحتية في المملكة العربية السعودية، تأسست عام 1444 هجري.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-5">
+                <h5 class="footer-title">الخدمات</h5>
+                <ul class="list-unstyled">
+                    <li><a href="الخدمات .html">تصميم بيئة عمل</a></li>
+                    <li><a href="الخدمات .html">مقاولات عامة</a></li>
+                    <li><a href="الخدمات .html">تشطيبات داخلية</a></li>
+                    <li><a href="الخدمات .html">تشطيبات خارجية</a></li>
+                    <li><a href="الخدمات .html">البنية التحتية</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-5">
+                <h5 class="footer-title">روابط مفيدة</h5>
+                <ul class="list-unstyled">
+                    <li><a href="من نحن .html">من نحن</a></li>
+                    <li><a href="المشاريع.html">المشاريع</a></li>
+                    <li><a href="الوظاءف .html">الوظائف</a></li>
+                    <li><a href="تواصل معنا.html">اتصل بنا</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-5">
+                <h5 class="footer-title">تواصل معنا</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-map-marker-alt ms-2"></i> الرياض، المملكة العربية السعودية</li>
+                    <li><i class="fas fa-phone ms-2"></i> +966 50 650 3938</li>
+                    <li><i class="fas fa-envelope ms-2"></i> info@contemporary.sa</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2024 التنفيذ المعاصر. جميع الحقوق محفوظة.</p>
+        </div>
     </div>
-  </section>
-
-  <section  style="font-size: 17px;font-weight: 100;color: #000; text-decoration: none;" >
-    <div class="container text-center text-md-start mt-5">
-      <div class="row mt-3">
- 
-
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" >
-          <h6 class="text-uppercase fw-bold mb-4">
-            الخدمات
-          </h6>
-          <p>
-            <a href="#!" class="text-reset"   style="text-decoration: none;">        تصميم وانشاء بيئة عمل مناسبة            </a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset"  style="text-decoration: none;"> اعمال المقاولات العامة المتعلقه بانشاء المباني            </a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset"  style="text-decoration: none;">تشطيبات داخليه وخارجيه            </a>
-          </p>
-          <p>
-   <a href="#!" class="text-reset"  style="text-decoration: none;"> اعمال البينة التحتيه</a>
-          </p>
-        </div>
-
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" >
-          <h6 class="text-uppercase fw-bold mb-4">
-            روابط مفيدة
-          </h6>
-          <p>
-            <a href="#!" class="text-reset"  style="text-decoration: none;" >الأسعار</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset"  style="text-decoration: none;">الإعدادات</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset"  style="text-decoration: none;">الطلبات</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset"  style="text-decoration: none;">المساعدة</a>
-          </p>
-        </div>
-
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <h6 class="text-uppercase fw-bold mb-4">تواصل</h6>
-          <p><i class="fas fa-home me-3"></i> نيويورك، نيويورك 10012، الولايات المتحدة</p>
-          <p>
-            <i class="fas fa-envelope me-3"></i>
-            info@example.com
-          </p>
-          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
-        </div>
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3"></i>اسم الشركة
-          </h6>
-          <p>
-            مؤسسة ناشئة بمجال البناء والمقاولات و التشطيب و البنية التحتية في المملكة العربية السعودية تأسست عام 1444 هجري
-
-            الرياض
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2021 الحقوق محفوظة:
-    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-  </div>
 </footer>
 
-
-<!-- end ten sections  -->
-
-
-
-
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <script src="main.js"></script>
-  <script src="bootstrap-4.0.0-dist/js/popper.min.js"></script>
-  <script src="bootstrap-4.0.0-dist/js/bootstrap.js"></script>
-  <script src="bootstrap-4.0.0-dist/js/jquery-3.7.1.min.js"></script>
+<!-- ===== السكريبتات ===== -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
